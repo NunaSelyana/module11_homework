@@ -11,5 +11,7 @@ export function getMonth(n) {
 	if (n === 10) return 'октябрь';
 	if (n === 11) return 'ноябрь';
 	if (n === 12) return 'декабрь';
-  return 'Oшибка';
+	if (isNaN(n)) return 'Введите число';
+	if (n === 0) return 'Упс';
+  return 'Ошибка';
 }

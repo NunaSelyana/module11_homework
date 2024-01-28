@@ -9,5 +9,8 @@ describe('get the name of the month by number', () => {
     }),
     it('Введено не число', () => {
         expect(getMonth('str')).toBe('Введите число'); 
+    }),
+    it('Введен 0', () => {
+        expect(getMonth(0)).toBe('Упс'); 
     })
 });
